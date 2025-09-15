@@ -33,7 +33,7 @@ function highlightActive(route) {
 }
 
 function navigateFromHash() {
-  const route = (window.location.hash || "#/dilema1").replace("#", "");
+  const route = (window.location.hash || "#/home").replace("#", "");
   render(route);
 }
 
