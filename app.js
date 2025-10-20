@@ -2,9 +2,14 @@ const routes = {
   "/home": "pages/home.html",
   "/evaluacion1": "pages/evaluacion1.html",
   "/matrizev1": "pages/matrizev1.html",
+  "/evaluacion2": "pages/evaluacion2.html",
+  "/matrizev2": "pages/matrizev2.html",
   "/dilema1": "pages/dilema1.html",
   "/dilema2": "pages/dilema2.html",
   "/dilema3": "pages/dilema3.html",
+  "/dilema4": "pages/dilema4.html",
+  "/dilema5": "pages/dilema5.html",
+  "/dilema6": "pages/dilema6.html",
 };
 
 async function render(route) {
