@@ -4,6 +4,7 @@ const routes = {
   "/matrizev1": "pages/matrizev1.html",
   "/evaluacion2": "pages/evaluacion2.html",
   "/matrizev2": "pages/matrizev2.html",
+  "/evaluacion3": "pages/evaluacion3.html",
   "/dilema1": "pages/dilema1.html",
   "/dilema2": "pages/dilema2.html",
   "/dilema3": "pages/dilema3.html",

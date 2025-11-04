@@ -1,0 +1,108 @@
+<main class="container">
+  <h1>Evaluación Parcial N°3 — Creación y Resolución de un Dilema Ético</h1>
+
+  <section id="identificacion">
+    <h2>Identificación</h2>
+    <p><strong>Nombre completo:</strong> Fabián Emilio Lecaros Ampuero <strong>Rut:</strong> 15.961.836-6</p>
+    <p><strong>Carrera:</strong> Ingenieria en Informática <strong>Sección:</strong> 001V</p>
+  </section>
+
+  <!-- I. DILEMA -->
+  <section id="dilema">
+    <h2>I. Dilema Ético Profesional</h2>
+
+    <h3>Título: “La firma imposible”</h3>
+    <h4>Personajes</h4>
+    <ul>
+      <li><strong>Valentina</strong>, ingeniera de software senior y líder de validación, reconocida por su rigurosidad técnica y criterio ético.</li>
+      <li><strong>Rodrigo</strong>, gerente de proyecto del proveedor, orientado a plazos y a la continuidad del contrato.</li>
+      <li><strong>Dra. Herrera</strong>, jefa de Informática Clínica del hospital, responsable de la seguridad del paciente.</li>
+      <li><strong>Equipo de QA</strong> y <strong>usuarios clínicos</strong> que participan en pruebas de aceptación.</li>
+      <li><strong>Pacientes</strong> y <strong>personal médico</strong> afectados por el software de prescripción electrónica.</li>
+    </ul>
+
+    <h4>Contexto</h4>
+    <p>
+      Un hospital público está implementando un módulo de <em>prescripción electrónica</em> integrado con el sistema de farmacia. 
+      El contrato exige certificar el go-live antes de fin de mes para no perder financiamiento estatal. El proveedor liberó 
+      una versión que corrige rendimiento, pero incorpora un cambio de último minuto en el motor de validación de dosis. 
+      Durante las pruebas, el equipo de Valentina detecta <strong>dos fallas intermitentes</strong>: 
+      (a) cálculos erráticos en pacientes pediátricos con pesos extremos y 
+      (b) conflictos de interacción farmacológica que no se muestran si la red tiene latencia alta.
+    </p>
+    <p>
+      El proveedor asegura que “en producción real” la latencia será menor y que el caso pediátrico “no es representativo”. 
+      Pide a Valentina <strong>firmar la certificación</strong> para mantener el cronograma, prometiendo un parche <em>post go-live</em>. 
+      La Dra. Herrera quiere el sistema cuanto antes para reducir errores de lectura manuscrita, pero advierte que no firmará 
+      si la evidencia de seguridad es insuficiente. Rodrigo presiona a Valentina recordándole que un rechazo “podría afectar la 
+      relación contractual” y el bono por entrega del equipo.
+    </p>
+
+    <h4>Problema Ético</h4>
+    <ul>
+      <li><strong>Tensión entre seguridad del paciente</strong> y <strong>presión por plazos/financiamiento</strong>.</li>
+      <li>Solicitud de <strong>firma de conformidad</strong> sin evidencia adecuada para una funcionalidad sensible.</li>
+      <li>Riesgo de <strong>daño real</strong> (dosis incorrectas/alertas omitidas) frente a beneficios de despliegue anticipado.</li>
+    </ul>
+  </section>
+
+  <!-- II. PLAN DE ACCIÓN -->
+  <section id="plan-accion">
+    <h2>II. Plan de Acción (Imaginación Moral)</h2>
+
+    <h3>Objetivo</h3>
+    <p>
+      Garantizar un despliegue seguro y responsable del módulo de prescripción electrónica, protegiendo la seguridad del paciente 
+      y la integridad profesional, sin perder de vista las restricciones de tiempo y presupuesto.
+    </p>
+
+    <h3>Paso 1 — Evidencia y transparencia inmediata</h3>
+    <ul>
+      <li>Documentar técnicamente los defectos: escenarios, pasos de reproducción, métricas de latencia, logs y casos pediátricos.</li>
+      <li>Convocar a una reunión extraordinaria con la Dra. Herrera y Rodrigo para <strong>exponer evidencia</strong> y <strong>riesgo clínico</strong>.</li>
+      <li>Proponer criterios de aceptación mínimos objetivos (p. ej., tasa de falsos negativos ≤ X%, pruebas de estrés con latencia simulada).</li>
+    </ul>
+
+    <h3>Paso 2 — Mitigación parcial y despliegue controlado</h3>
+    <ul>
+      <li>Plantear un <strong>go-live por fases</strong>: activar el módulo solo en <em>unidades piloto adultas</em> con menor variabilidad y supervisión reforzada.</li>
+      <li>Deshabilitar temporalmente las <strong>alertas de alto riesgo</strong> que fallen de forma intermitente y reemplazarlas por un <strong>procedimiento manual</strong> validado (doble verificación farmacéutica).</li>
+      <li>Implementar <strong>monitoreo en tiempo real</strong> (dashboards de latencia/errores) y <strong>rollback</strong> automatizado si los umbrales se superan.</li>
+    </ul>
+
+    <h3>Paso 3 — Corrección, validación clínica y decisión final</h3>
+    <ul>
+      <li>Exigir <strong>parche del proveedor</strong> en un plazo acotado y ejecutar una <strong>batería de pruebas</strong> con casos pediátricos y condiciones de red adversas.</li>
+      <li>Realizar una <strong>validación clínica conjunta</strong> (informática + farmacia + pediatría) con evidencia firmada.</li>
+      <li>Solo tras cumplir criterios objetivos, <strong>ampliar</strong> el despliegue a toda la institución y <strong>firmar</strong> la conformidad definitiva.</li>
+    </ul>
+  </section>
+
+  <!-- III. IMPLICANCIAS ÉTICAS -->
+  <section id="implicancias">
+    <h2>III. Implicancias Éticas (fortaleza, templanza, verdad y lealtad)</h2>
+    <ul>
+      <li><strong>Fortaleza:</strong> Sostener una postura técnica y ética ante la presión de plazos y posibles costos políticos.</li>
+      <li><strong>Templanza:</strong> Evitar extremos (bloquear todo o aprobar sin criterios), optando por un despliegue gradual con mitigaciones.</li>
+      <li><strong>Verdad:</strong> Informar con transparencia la magnitud del riesgo y la evidencia disponible, sin ocultar defectos.</li>
+      <li><strong>Lealtad:</strong> Con la organización y los pacientes (bien común), por encima de intereses de corto plazo o beneficios individuales.</li>
+    </ul>
+    <p>
+      Elaborar un plan bajo estas virtudes fomenta la <strong>confianza</strong> entre áreas clínicas y TI, fortalece la <strong>gobernanza</strong> de cambios 
+      y reduce la probabilidad de <strong>eventos adversos</strong>. También protege la <strong>reputación profesional</strong> y organiza la toma de decisiones 
+      frente a conflictos entre objetivos operativos y seguridad del paciente.
+    </p>
+  </section>
+
+  <!-- IV. IMPORTANCIA DE LA ÉTICA -->
+  <section id="importancia">
+    <h2>IV. Importancia de la Ética y de la Excelencia Profesional</h2>
+    <p>
+      En entornos complejos y de alto impacto, la ética no es un accesorio: es un <strong>marco operativo</strong> que orienta los 
+      compromisos técnicos hacia el bien común. Buscar la <strong>excelencia profesional</strong> implica establecer criterios verificables, 
+      rendición de cuentas y aprendizaje continuo. Actuar con prudencia y verdad permite innovar sin sacrificar la seguridad; 
+      cultivar fortaleza y lealtad promueve equipos confiables y decisiones legitimadas. La excelencia, así entendida, 
+      convierte los dilemas en oportunidades para mejorar procesos, cultura y resultados para las personas.
+    </p>
+  </section>
+</main>
